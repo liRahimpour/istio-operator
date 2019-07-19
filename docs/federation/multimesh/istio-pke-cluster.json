@@ -1,6 +1,6 @@
 {
   "name": "istio-multimesh-pke",
-  "location": "eu-west-3",
+  "location": "eu-central-1",
   "cloud": "amazon",
   "secretId": "{{secretID}}",
   "properties": {
@@ -17,7 +17,7 @@
             "autoScalingGroup": {
               "name": "master",
               "zones": [
-                "eu-west-3a"
+                "eu-central-1a"
               ],
               "instanceType": "t3a.xlarge",
               "launchConfigurationName": "master",
@@ -41,7 +41,7 @@
             "autoScalingGroup": {
               "name": "pool1",
               "zones": [
-                "eu-west-3a"
+                "eu-central-1a"
               ],
               "instanceType": "t3.large",
               "launchConfigurationName": "pool1",
