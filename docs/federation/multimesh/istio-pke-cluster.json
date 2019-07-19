@@ -19,7 +19,7 @@
               "zones": [
                 "eu-west-3a"
               ],
-              "instanceType": "c5.xlarge",
+              "instanceType": "t3a.xlarge",
               "launchConfigurationName": "master",
               "spotPrice": "",
               "size": {
@@ -43,7 +43,7 @@
               "zones": [
                 "eu-west-3a"
               ],
-              "instanceType": "t2.medium",
+              "instanceType": "t3.large",
               "launchConfigurationName": "pool1",
               "spotPrice": "0.05",
               "size": {
