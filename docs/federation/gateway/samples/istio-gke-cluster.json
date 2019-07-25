@@ -6,22 +6,22 @@
   "properties": {
     "gke": {
       "master": {
-        "version": "1.12.6-gke.10"
+        "version": "1.13"
       },
-      "nodeVersion": "1.12.6-gke.10",
+      "nodeVersion": "1.13",
       "nodePools": {
         "pool1": {
-          "count": 1,
+          "count": 2,
           "autoscaling": true,
           "instanceType": "n1-standard-2",
           "preemptible": true,
-          "minCount": 1,
+          "minCount": 2,
           "maxCount": 2
         },
         "system": {
           "count": 1,
           "autoscaling": false,
-          "instanceType": "n1-standard-2",
+          "instanceType": "n1-standard-4",
           "preemptible": false
         }
       },
