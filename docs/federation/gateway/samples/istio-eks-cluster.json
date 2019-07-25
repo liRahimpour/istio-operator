@@ -9,11 +9,11 @@
       "nodePools": {
         "pool1": {
           "spotPrice": "0",
-          "count": 1,
-          "minCount": 1,
-          "maxCount": 3,
+          "count": 2,
+          "minCount": 2,
+          "maxCount": 2,
           "autoscaling": true,
-          "instanceType": "t2.medium"
+          "instanceType": "t3.large"
         },
         "system": {
           "spotPrice": "0",
@@ -21,7 +21,7 @@
           "minCount": 1,
           "maxCount": 1,
           "autoscaling": false,
-          "instanceType": "t2.medium"
+          "instanceType": "t3a.xlarge"
         }
       }
     }
