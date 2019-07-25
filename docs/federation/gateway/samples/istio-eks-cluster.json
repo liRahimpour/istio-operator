@@ -1,6 +1,6 @@
 {
   "name": "istio-eks",
-  "location": "eu-west-2",
+  "location": "eu-central-1",
   "cloud": "amazon",
   "secretId": "{{secretID}}",
   "properties": {
