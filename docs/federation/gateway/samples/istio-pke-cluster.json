@@ -1,6 +1,6 @@
 {
   "name": "istio-pke",
-  "location": "eu-west-3",
+  "location": "eu-central-1",
   "cloud": "amazon",
   "secretId": "{{secretID}}",
   "properties": {
@@ -17,15 +17,39 @@
             "autoScalingGroup": {
               "name": "master",
               "zones": [
-                "eu-west-3a"
+                "eu-central-1a"
               ],
-              "instanceType": "c5.xlarge",
+              "instanceType": "t3a.xlarge",
               "launchConfigurationName": "master",
               "spotPrice": "",
               "size": {
                 "desired": 1,
                 "min": 1,
                 "max": 1
+              }
+            }
+          }
+        },
+        {
+          "name": "pool1",
+          "roles": [
+            "worker"
+          ],
+          "provider": "amazon",
+          "autoscaling": true,
+          "providerConfig": {
+            "autoScalingGroup": {
+              "name": "pool1",
+              "zones": [
+                "eu-central-1a"
+              ],
+              "instanceType": "t3.large",
+              "launchConfigurationName": "pool1",
+              "spotPrice": "0.05",
+              "size": {
+                "desired": 2,
+                "min": 2,
+                "max": 2
               }
             }
           }
