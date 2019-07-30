@@ -47,16 +47,16 @@
               "launchConfigurationName": "pool1",
               "spotPrice": "0.05",
               "size": {
-                "desired": 2,
-                "min": 2,
+                "desired": 1,
+                "min": 1,
                 "max": 2
               }
             }
+            }
           }
-        }
-      ],
+        ],
       "kubernetes": {
-        "version": "1.12.2",
+        "version": "1.14.2",
         "rbac": {
           "enabled": true
         }
